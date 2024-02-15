@@ -1,6 +1,5 @@
 JavaScript
 ------------------
-
 -can be used in both front end as well as backend
     - frontend - it gives behaviour
     -backend - it is used to do logical operations
@@ -56,4 +55,86 @@ hoisting - using of variable before it is created/declared
 template literals
 -----------------------
 -its a way of displaying content
-`content $variable
+`content ${variable}`
+
+operator
+----------------
+1> Assignment operator - =
+2> Aritghmetic operator
+    addition - +
+    subtraction  - -
+    division - /
+    multipilcation - *
+    modules - %
+    exponent - power - **
+3>Relational operators - will return boolean values
+    > >= < <= == ===
+    = to assign values
+    == to check values are equal
+    === to check value and data type are equal
+4>Logical OPerators  - JOIN TWO OR MORE RELATIONAL OPERATORS - return boolean values
+    AND - (&&)
+        T && T = T
+        T && F = F
+        F && T = F
+        F && F = F
+    OR - (||)
+        T && T = T
+        T && F = T
+        F && T = T
+        F && F = F
+    NOT - !
+        !T = F
+        !F = T
+5> increment /decrement operators
+    (++)/--
+    x=10
+    x++ = 10+1=11
+    x-- = 10-1=9
+
+6> shorthand operator
+    x=x+y => x+=y
+    x=x-y =>x-=y
+
+7> ternary operator 
+    condition?true:false;
+    age>=18?"vote":"no vote";
+
+conditional satement/decision making statements
+1> if else
+        if (condition)
+        {
+            statements if true
+        }
+        else if{
+            
+        }
+        else
+        {
+            statements if false
+        }
+Looping Statements
+----------------------
+
+- to do a task repeatedly
+1>while loop
+    syntax
+    ----------
+    variable initialization
+    while(condition)
+    {
+        task
+        condition to exit the loop(incriment /decrement)
+    }
+
+
+
+
+
+
+
+
+
+
+    
+
