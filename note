@@ -27,6 +27,7 @@ concatination - to join/add same or different data type
 string + string = string
 string + number = string
 number + number = number
+strinhg*number = number
 
 variables
 ------------
@@ -127,14 +128,121 @@ Looping Statements
         condition to exit the loop(incriment /decrement)
     }
 
+2> for
+    syntax:
+    for(var init; condition; exit condition)
+    {
+        statements
+    }
+    braek: is used to forcefully exit a loop
 
+Nested Loop:Loop inside another loop
 
+Functions
+--------------------
+-used to do same task repetedly at different locations.
+-two parts
+    1>function definition 
+        -task 
+        -syntax:
+            function functionname(arg,. . ., arg)
+            {
+                task
+                return var
+            }
 
+            function-keyword
+            arg- variables that are needed to perform task
 
-
-
-
-
-
+    2>function call
+        to execute the task
+        -synatx:
+        ------
+        functionname(arg1, arg2..., argn)
     
+    function hositing- calling a function before definition. for normal functions hoisting is possible
+    variable inside a fun is block level scope
+    return var; to access a variable outside a fun
+    always give return statement as the last ststement of a function
 
+    Arrow Function
+    -----------------
+    es6 version - gives more performance
+
+    syntax:
+    keyword variable=(args)=>{
+        more than one stement
+    }
+
+
+    function call using variable
+
+    variable()
+
+    3> Predefined functions
+
+    -those function created by the pgm developers
+    -example
+    1> Number - to convert to number datatype
+    2>Math.floor()-to remove decimals
+    3>parseInt()-to convert to integer
+    4>typeof()
+    5>console.log()
+
+    4> call back function
+
+        -function calling another function
+
+        setTimeout - it is a predefined function
+
+    5>Asynchronous function - fn which has time dealy
+        setTimeout
+        API calls
+
+    6>Synchronous function
+
+    7>Nested Function- function definition inside another function
+        closure property: variables inside a parent can be accessed in child component but not viceversa whereas variables inside child can not be used in parent function.
+            function parent(){
+                const parent='parent'
+                console.log(`variable inside parent function is :${parent}`);
+                /*console.log(`varible inside child is :${childvar}`);*/   this is not possible since childvar is child function's variable
+            
+                function child(){
+                    const childvar='child'
+                    console.log(`varible inside child is :${childvar}`);
+                    console.log(`variable inside parent function is :${parent}`);//this is possible. since parent is parent fun member.
+                }
+                child()
+            }
+            
+            parent();
+
+
+
+
+DATASTRUCTURE
+----------------------
+
+-datastructure is a specialized format of organizing, retrieving, processing and storing data.
+example:
+-Array, list, linked list, stack, queue, tree, graph
+
+
+-Array
+-----------
+    -unlike variables array can hold more than one value/data at a time
+
+    -definition: Array is a single variable which can store more than one value of differnt data type thet are seprated by commas and enclosed within square brackets.
+
+    -Array can store more than one datatype.
+    -store - key:value 
+    -key - index position
+    -value - data to be stored
+    index: indicates the position of elements in an array.
+    value starts from 0 and ends in length-1
+
+    length-number of items/elements in an array. lenghth starts from 1.
+
+    representation/syntax:
+    keyword variable = [item1 ....itemn]
