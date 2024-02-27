@@ -246,3 +246,38 @@ example:
 
     representation/syntax:
     keyword variable = [item1 ....itemn]
+Array in javascript is infinite
+    array operations:
+    1) push():to add data to the end of an Array
+    2) unshift() - used to add data to an array at the begining of an array
+    3)pop() - to remove an item from an array
+    4) shift() -to remove item from the start
+    5)sort()-to arrange the array
+
+different way of accessing array elements
+--------------------------------------------
+1)for loop:
+2)for in:directly access the index
+3)for of:directly access the values
+
+linear search
+Binary Search: will reduce the time dealy
+            work on sorted array
+            binary search - asending order
+            sort()
+
+            ascending
+
+            sort((a,b)=>a-b)
+
+            descending
+            sort((a,b)=>b-a)
+
+Nested array - array within an array
+
+flat()- decreses the array two one lower position(2d - 1D)
+flat(depth) - decreses depth dimention from array
+            suppose flat(3) decreses 4d array to one dimention
+            
+
+
