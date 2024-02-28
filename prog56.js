@@ -19,3 +19,4 @@ for(n of a){
         console.log(n);
     }
 }
+

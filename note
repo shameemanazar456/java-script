@@ -250,10 +250,17 @@ Array in javascript is infinite
     array operations:
     1) push():to add data to the end of an Array
     2) unshift() - used to add data to an array at the begining of an array
-    3)pop() - to remove an item from an array
+    3) pop() - to remove an item from an array
     4) shift() -to remove item from the start
-    5)sort()-to arrange the array
-
+    5) sort()-to arrange the array
+    6) forEach()-to access each items from an array. it returns void. 
+    7) map() - it creates a new array having same number of elements in the parent array
+    8) reduce(callback) - single value from an array. example:highest number, sum, avg
+    9) fileter() - to create a new array having elements that satisfy a particular condition
+    10) flat()-to change the dimension 
+    11) some() - it returns boolean value based on a condition
+    12) find() - it return a value that satisfy a particular condition
+    13) includes() - return boolean value based on items
 different way of accessing array elements
 --------------------------------------------
 1)for loop:
