@@ -16,6 +16,7 @@ data type (8type)
 1>string - single or double quotes
 2>boolean - true or false
 3> number - integer and decimal values
+4>object
 
 method to check data type - typeOf()
 
@@ -257,10 +258,13 @@ Array in javascript is infinite
     7) map() - it creates a new array having same number of elements in the parent array
     8) reduce(callback) - single value from an array. example:highest number, sum, avg
     9) fileter() - to create a new array having elements that satisfy a particular condition
-    10) flat()-to change the dimension 
+    10) flat()-to change the dimension  - depth infinite-convert to 1d array directly
     11) some() - it returns boolean value based on a condition
     12) find() - it return a value that satisfy a particular condition
     13) includes() - return boolean value based on items
+    14) splice() - to add or remove from a particular position in an array
+    15)reduceRight()-iterations start from right
+
 different way of accessing array elements
 --------------------------------------------
 1)for loop:
@@ -288,3 +292,53 @@ flat(depth) - decreses depth dimention from array
             
 
 
+String Methods
+---------------------
+1) toLowercase - convert the string into small letters
+2) toUpperCase - convert in to capital letters
+3) subString(start,end) -  exclude the ednding index
+4) startsWith() - check whether the given string starts with a particular character. return boolean
+    -it is case sensitive
+5) endsWith() - check whether a given string ends with particular character. return booloan
+    -it is case sensitive
+6) trim()- remove white spaces form bigning and end
+7) split() - used to split the given string. returns an array
+8) Array.from(strname)-
+9) replace()- 
+10) replaceAll() -
+11) slice(start,end) - can be sliced from back
+
+
+object
+---------------
+-object is used to storemore than one value with more clarity to the  stored data
+syntax
+-----------
+objectname ={
+    key:value,key1:value1
+    keyn:valuen
+}
+
+operations
+--------------------
+1) Add an item
+        1) objectName["key]=value
+        2) Object.assign(target,{key:value})
+2) delete
+        delete  objectname:key;
+3) update
+        objectName["key"]=value
+
+4) get
+    objectname[key] - key can be a variable
+    objectname.key - exact key
+
+to access keys
+
+    -in
+
+
+Array Objects
+----------------------
+
+-

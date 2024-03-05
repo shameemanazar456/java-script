@@ -30,21 +30,19 @@ console.log('---------------------');
 //print developer employee details
 
 console.log('details of Developer Employee');
-m=employee.filter(x=>x[2]=='developer')
-console.log(m);
+employee.filter(x=>x[2]=='developer').forEach(y=>console.log(y))
+
 
 console.log('---------------------------------');
 
 //print employee whose salary > 30000
 console.log('Employee whose salary greter than 30000' );
-m=employee.filter(emp=>emp[4]>30000)
-console.log(m);
+employee.filter(emp=>emp[4]>30000).forEach(x=>console.log(x))
 
 // print details of employee Laisha
 console.log('------------------------------------');
 console.log('details of employee Laisha');
-m=employee.find(x=>x[1]=='Laisha')
-console.log(m);
+employee.find(x=>x[1]=='Laisha').forEach(x=>console.log(x))
 console.log('----------------------------------------------');
 //sort employee based on their salary in descending order
 //sort((a,b)=>b-a)
@@ -71,3 +69,14 @@ console.log(hig[1]);
 
 
 
+//print the employee name  who have less salaru
+console.log('-----------------------------------------------');
+console.log('employ name whose have the lowest salary');
+low=employee.reduce((x,y)=>x[4]<y[4]?x:y)
+console.log(low[1]);
+//print the total salary expence of the company
+
+console.log('-----------------------------------------------');
+console.log('Total salary expence');
+total=employee.map(item=>item[4]).reduce((x,y)=>x+y)
+console.log(total);
