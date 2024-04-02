@@ -1,0 +1,179 @@
+JAVASCRIPT FRONTEND
+------------------------
+-Behaviour
+
+
+-browser
+    -It is an application program that provides an interface to interact with all information availabe in www
+
+-Browser Engine - it can read and display html css and JAVASCRIPT contents
+
+- Javascript cannot directly access html and css
+
+- but javascript can access DOM - Document Object Model.
+
+
+DOM 
+------
+- it is the TREE structure of html Document
+-created when html file loaded into a browser
+- created by browser.
+          html
+        |         |
+      head       Body
+    |   |   |       |    |
+    meta meta 
+
+
+BOM  - Browser Object Model 
+----------
+
+tells about navigation of a website
+
+Way to Apply Javascript with html
+------------------------------------
+1) internal JS - <script>  </script>
+    -after the body tag close
+
+2)External JS - create an external file with extension as .JS
+        -link it with html file using script tag and in src attribute specify the path
+
+HOw to access the html tag
+----------------
+1) document.getElementById("id") - returns particular tag
+2) document.getElementByTagname("tagname") - returns html collection(array) of that particu;lar tag
+3) document.getElemntByClassName("classname")-returns html collection(array) of  with same class name
+4) document.querySelector("tagname/#id/.clsname") - returns a first tag that satisfies the condition
+5)document.querySelectorAll("tagname/#id/.clsname")- retursn an array of all tags that satisfy the condition called nodelist
+
+How to access the contents
+-------------------------
+1).innerHTML
+2)document.write(), textcontent()
+
+Events
+-----------
+-events are those actions which have the ability to update the DOM
+1) click
+2) change
+3) keydown
+4) submit
+6) load
+
+DataBase
+--------------------
+-used to store data
+-data should be stored as key value pair
+-key must be string
+
+-MongoDB
+
+-browser - storage
+
+	1)local storage - permanent storage - delete only if manually remove - 
+	2)session storage - limit amount of data - not permanent storage
+			 - data will lost when that session is closed
+
+operations in local storage
+------------------------------
+1) Add data - setItem("key",value)
+2) retrieve data - getItem(key)
+3) delete data - removeItem(key)
+
+JSON.stringfy - convert object to string
+JSON.parse - convert string to object
+
+API
+--------
+Application Programming interface
+--------------------------------------
+
+- to communicate between two software applications available in internet
+
+- There are different types of API - based on scope
+---------------------------------------
+1) Public API - owned by all
+2) Private API - owned by some companies 
+3) Partener API - Shared btw two private comp
+4) Composite API - interconnected API
+
+HTTP - HYPERTEXT TRANSFER PROTOCOL
+--------------------------------------
+REFER - HTTPS, FTP, SMTP, TCP, UDP
+
+HTTP VS HTTPS
+--------------------
+-more secure transmission - HTTPS - by encryption
+
+METHODS HTTP
+------------
+
+- GET - to retrive data
+- PUT  - to update data
+- POST  - to add data
+- DELETE - to remove data
+
+request have two part 
+------------------------
+1) header - authentication purpose - secrete content, content types 
+2) body  - content 
+
+response series 
+--------------------
+
+1) 1xx - 100 series  100 - 199 - information
+2) 2xx - 200 -299 - success 
+3) 3xx - redirection
+4) 4xx - client side error
+5) 5xx - server side error
+
+data should be send in JSON format
+
+JSON - JavaScript object notation
+---------
+common format of sharing data
+
+key:value - both key and value should be string
+{},[], separated commas
+
+URL should be provided while creating API
+
+URL - Uniform Resource Locator
+------------------------------
+- resources - data avaialbe in internet - address of these data in internet is called URL
+
+-Resource address in internet
+
+RESTFUL API - this architecture is called RESTFUL API REPREENTATIONAL STATE TRANSFER
+
+** refer - SOAP API
+
+API tetsing tool
+-----------------------
+1) thunder client - extension of vscode 
+2) postman - real tool
+
+PUBLIC API
+jsonplaceholder
+fakestoreapi
+
+different methods to do API calls
+------------------------------------
+1) AJAX - Asynchronous JavaScript XML - xmlhttpRequest class
+2) Fetch - promise class - 
+3) ASYNC-AWAIT - based on promise class 
+    advantage over fetch
+     - response can be stored in a variable
+     - .then() - single .then is enough
+
+promise class - 3 STATE - class used to resolve Asynchronous functions
+
+1) resolve STATE - proper responese - to access the response .then() 
+2) pending - niether resolved nor rejected
+3) reject state - no proper response  - due to  some errors - response .catch()
+
+
+
+
+
+
