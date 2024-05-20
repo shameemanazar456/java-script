@@ -1,0 +1,13 @@
+/* #firstCheckbox:checked+#checktext {
+    color: #777;
+    text-decoration: line-through;
+  }  */
+
+  body{
+    background-color: rgb(195, 236, 223);
+    overflow-x: hidden;
+  }
+  .outer{
+    background-color: rgb(35, 156, 11);
+
+  }
